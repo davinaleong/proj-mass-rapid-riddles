@@ -1,5 +1,23 @@
 /// Custom
 :root {
-  --wrapper-width: theme("width.lg");
+  --wrapper-width: 1280px;
   --flow-spacer: theme("padding.4");
+}
+
+.wrapper {
+  --_wrapper-width: var(--wrapper-width);
+
+  max-width: min(100%, var(--_wrapper-width));
+
+  &-fluid {
+    --_wrapper-width: 100%;
+  }
+}
+
+.flow {
+  --_flow-spacer: var(--flow-spacer);
+
+  & > * + * {
+    margin-block-start: var(--_flow-spacer);
+  }
 }
