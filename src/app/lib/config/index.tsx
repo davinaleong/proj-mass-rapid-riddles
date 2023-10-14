@@ -1,11 +1,12 @@
 import { LibConfigInterface } from "./interfaces"
-import { title, description, help, author, year } from "./variables"
+import { title, description, keywords, author, url, year } from "./variables"
 
 const LibConfig: LibConfigInterface = {
   title,
   description,
-  help,
+  keywords,
   author,
+  url,
   year,
 }
 
