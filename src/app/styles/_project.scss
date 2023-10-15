@@ -2,6 +2,26 @@
 
 .app {
   --_app-header-height: 128px;
+  --_app-clr: theme("colors.neutral.950");
+  --_app-bg-clr: theme("colors.neutral.100");
+
+  --_app-header-title-clr: theme("colors.red.700");
+  --_app-header-subtitle-clr: theme("colors.red.500");
+
+  color: var(--_app-clr);
+  background-color: var(--_app-bg-clr);
+
+  &__header {
+    min-height: var(--_app-header-height);
+
+    &__title {
+      color: var(--_app-header-title-clr);
+    }
+
+    &__subtitle {
+      color: var(--_app-header-subtitle-clr);
+    }
+  }
 
   &__main {
     min-height: calc(100vh - var(--_app-header-height));
@@ -18,6 +38,14 @@
   }
 
   &-mode {
+    --_btn-clr: theme("colors.neutral.50");
+    --_btn-bg-clr: theme("colors.neutral.700");
+    --_btn-border-clr: theme("colors.neutral.900");
+
+    --_btn-hover-clr: theme("colors.neutral.50");
+    --_btn-hover-bg-clr: theme("colors.neutral.500");
+    --_btn-hover-border-clr: theme("colors.neutral.900");
+
     position: fixed;
     right: theme("padding.4");
     top: theme("padding.4");
@@ -85,5 +113,25 @@
       --_btn-hover-clr: theme("colors.neutral.50");
       --_btn-hover-bg-clr: theme("colors.red.500");
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .app {
+    --_app-clr: theme("colors.neutral.50");
+    --_app-bg-clr: theme("colors.neutral.900");
+
+    --_app-header-title-clr: theme("colors.red.300");
+    --_app-header-subtitle-clr: theme("colors.red.500");
+  }
+
+  .btn-mode {
+    --_btn-clr: theme("colors.neutral.950");
+    --_btn-bg-clr: theme("colors.neutral.300");
+    --_btn-border-clr: theme("colors.neutral.100");
+
+    --_btn-hover-clr: theme("colors.neutral.950");
+    --_btn-hover-bg-clr: theme("colors.neutral.500");
+    --_btn-hover-border-clr: theme("colors.neutral.100");
   }
 }
