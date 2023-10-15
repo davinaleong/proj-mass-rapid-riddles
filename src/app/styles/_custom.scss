@@ -40,12 +40,12 @@ a {
 }
 
 .btn {
-  --_btn-clr: theme("colors.white");
+  --_btn-clr: theme("colors.neutral.50");
   --_btn-bg-clr: theme("colors.neutral.500");
   --_btn-border: thin solid var(--_btn-border-clr);
   --_btn-border-clr: theme("colors.neutral.700");
 
-  --_btn-hover-clr: theme("colors.white");
+  --_btn-hover-clr: theme("colors.neutral.50");
   --_btn-hover-bg-clr: theme("colors.neutral.600");
   --_btn-hover-border: thin solid var(--_btn-hover-border-clr);
   --_btn-hover-border-clr: theme("colors.neutral.700");
