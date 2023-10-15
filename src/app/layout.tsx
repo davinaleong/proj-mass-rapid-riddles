@@ -1,9 +1,7 @@
 import "./styles/app.scss"
 import type { Metadata } from "next"
-import { usePathname } from "next/navigation"
 import { Montserrat } from "next/font/google"
 import LibConfig from "./lib/config"
-import HeaderComponent from "./components/header"
 
 const font = Montserrat({ subsets: ["latin"] })
 
@@ -24,18 +22,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const pathname = usePathname()
-
   return (
     <html lang="en">
       <body id="top" className={font.className}>
-        <HeaderComponent
-          title={LibConfig.title}
-          subtitle={LibConfig.copyright}
-          showBackBtn={pathname !== "/"}
-        />
-
-        <main className="wrapper mx-auto py-4">{children}</main>
+        {children}
       </body>
     </html>
   )

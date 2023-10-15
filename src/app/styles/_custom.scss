@@ -4,6 +4,23 @@
   --flow-spacer: theme("padding.4");
 }
 
+a {
+  --_a-clr: theme("colors.blue.500");
+  --_a-td: underline;
+
+  --_a-hover-clr: theme("colors.gray.500");
+  --_a-hover-td: underline;
+
+  color: var(--_a-clr);
+  text-decoration: var(--_a-td);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--_a-hover-clr);
+    text-decoration: var(--_a-hover-td);
+  }
+}
+
 .wrapper {
   --_wrapper-width: var(--wrapper-width);
 
@@ -56,5 +73,6 @@
     color: var(--_btn-hover-clr);
     background-color: var(--_btn-hover-bg-clr);
     border: var(--_btn-hover-border);
+    text-decoration: var(--_btn-td);
   }
 }
