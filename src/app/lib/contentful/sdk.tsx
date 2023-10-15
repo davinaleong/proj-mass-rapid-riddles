@@ -27,11 +27,11 @@ export async function getEntries(slug: string = ``) {
       "fields.slug": slug,
     }
   }
-  console.log(`object`, object)
+  // console.log(`object`, object)
 
   try {
     const { total, items } = await client.getEntries(object)
-    console.log(`total`, total)
+    // console.log(`total`, total)
 
     return items
   } catch (error) {
