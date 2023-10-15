@@ -5,4 +5,5 @@ export interface LibConfigInterface {
   author: string
   url: string
   year: number
+  copyright: string
 }
