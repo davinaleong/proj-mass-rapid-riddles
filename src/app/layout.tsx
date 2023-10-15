@@ -1,5 +1,6 @@
 import "./styles/app.scss"
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Montserrat } from "next/font/google"
 import LibConfig from "./lib/config"
 
@@ -24,7 +25,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body id="top" className={`${font.className} app`}>
+      <body id="top" className={`${font.className} app relative`}>
+        <Link href="#top" className="btn btn-top">
+          Top
+        </Link>
+
         {children}
       </body>
     </html>

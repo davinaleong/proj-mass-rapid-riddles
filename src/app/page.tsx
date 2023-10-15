@@ -1,4 +1,3 @@
-import Link from "next/link"
 import LibConfig from "./lib/config"
 import HeaderComponent from "./components/header"
 import { getEntries } from "./lib/contentful/sdk"
