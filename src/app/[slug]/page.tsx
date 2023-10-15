@@ -35,8 +35,18 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <h2 className="text-4xl font-bold">{`${fields.title}`}</h2>
 
           <h3 className="text-2xl font-bold text-neutral-500">Question</h3>
+
+          <div className="flow">
+            {documentToReactComponents(fields.question)}
+          </div>
+
           <h3 className="text-2xl font-bold text-neutral-500">Hint</h3>
+
+          <div className="flow">{documentToReactComponents(fields.hint)}</div>
+
           <h3 className="text-2xl font-bold text-neutral-500">Answer</h3>
+
+          <div className="flow">{documentToReactComponents(fields.answer)}</div>
         </section>
       </main>
     </>
