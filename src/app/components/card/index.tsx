@@ -9,7 +9,7 @@ function CardComponent({
 }: CardComponentInterface): JSX.Element {
   return (
     <Link key={key} href={href} className="btn btn-riddle">
-      <h3 className="text-xl font-bold">
+      <h3 className="text-xl font-medium">
         {index ? `${index + 1}. ` : ``}
         {label}
       </h3>

@@ -7,3 +7,21 @@
     min-height: calc(100vh - var(--_app-header-height));
   }
 }
+
+.btn {
+  &-grid {
+    --_btn-grid-spacer: theme("padding.4");
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23ch, 2fr));
+    gap: var(--_btn-grid-spacer);
+  }
+
+  &-riddle {
+    --_btn-spacer-inline: theme("padding.4");
+    --_btn-spacer-block: theme("padding.3");
+
+    display: flex;
+    min-height: 5em;
+  }
+}

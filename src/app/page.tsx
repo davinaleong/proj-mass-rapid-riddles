@@ -22,13 +22,15 @@ export default async function Home() {
       <main className="app__main wrapper mx-auto py-4 flow">
         <p className="italic">Click on the cards to see the riddle.</p>
         <section>
-          {riddles.map((riddle: any, index: number) => (
-            <CardComponent
-              label={riddle.fields.title}
-              href={`/${riddle.fields.slug}`}
-              key={`r${index}`}
-            />
-          ))}
+          <div className="btn-grid">
+            {riddles.map((riddle: any, index: number) => (
+              <CardComponent
+                label={riddle.fields.title}
+                href={`/${riddle.fields.slug}`}
+                key={`r${index}`}
+              />
+            ))}
+          </div>
         </section>
       </main>
     </>
