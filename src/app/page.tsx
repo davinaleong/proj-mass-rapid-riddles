@@ -11,8 +11,8 @@ export default function Home() {
         showBackBtn={false}
       />
 
-      <main className="wrapper mx-auto py-4">
-        <p>List riddles here.</p>
+      <main className="app__main wrapper mx-auto py-4 flow">
+        <p className="italic">Click on the cards to see the riddle.</p>
         <p>
           <Link href="/test">Go to Test.</Link>
         </p>

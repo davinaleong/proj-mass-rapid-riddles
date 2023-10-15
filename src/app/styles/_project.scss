@@ -1,2 +1,9 @@
 /// Project
-// code here
+
+.app {
+  --_app-header-height: 128px;
+
+  &__main {
+    min-height: calc(100vh - var(--_app-header-height));
+  }
+}
