@@ -30,6 +30,10 @@ export default function RootLayout({
           Top
         </Link>
 
+        <button type="button" className="btn btn-mode">
+          Dark
+        </button>
+
         {children}
       </body>
     </html>

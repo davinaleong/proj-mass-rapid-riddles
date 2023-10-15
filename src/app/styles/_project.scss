@@ -17,6 +17,13 @@
     gap: var(--_btn-grid-spacer);
   }
 
+  &-mode {
+    position: fixed;
+    right: theme("padding.4");
+    top: theme("padding.4");
+    z-index: 1;
+  }
+
   &-top {
     position: fixed;
     right: theme("padding.4");
