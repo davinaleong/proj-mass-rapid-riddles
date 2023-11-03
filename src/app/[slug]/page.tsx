@@ -31,7 +31,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         showBackBtn={true}
       />
 
-      <main className="app__main wrapper mx-auto py-4 flow">
+      <main className="app__main wrapper mx-auto p-4 flow">
         <section className="section flow">
           <h2 className="text-4xl font-bold">{`${fields.title}`}</h2>
 

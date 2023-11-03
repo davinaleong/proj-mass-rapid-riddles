@@ -18,7 +18,7 @@ export default async function Home() {
         showBackBtn={false}
       />
 
-      <main className="app__main wrapper mx-auto py-4 flow">
+      <main className="app__main wrapper mx-auto p-4 flow">
         <p className="italic">Click on the cards to see the riddle.</p>
         <section>
           <div className="btn-grid">
