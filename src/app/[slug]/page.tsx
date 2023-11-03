@@ -4,6 +4,7 @@ import LibConfig from "./../lib/config"
 import HeaderComponent from "./../components/header"
 
 import { getEntries } from "./../lib/contentful/sdk"
+import CollapsibleContentComponent from "../components/collapsible"
 
 export async function generateStaticParams() {
   const items = await getEntries()
@@ -31,22 +32,22 @@ export default async function Page({ params }: { params: { slug: string } }) {
       />
 
       <main className="app__main wrapper mx-auto py-4 flow">
-        <section className="flow">
+        <section className="section flow">
           <h2 className="text-4xl font-bold">{`${fields.title}`}</h2>
 
-          <h3 className="text-2xl font-bold text-neutral-500">Question</h3>
+          <article className="article flow">
+            <CollapsibleContentComponent
+              title="Question"
+              content={fields.question}
+            />
 
-          <div className="flow">
-            {documentToReactComponents(fields.question)}
-          </div>
+            <CollapsibleContentComponent title="Hint" content={fields.hint} />
 
-          <h3 className="text-2xl font-bold text-neutral-500">Hint</h3>
-
-          <div className="flow">{documentToReactComponents(fields.hint)}</div>
-
-          <h3 className="text-2xl font-bold text-neutral-500">Answer</h3>
-
-          <div className="flow">{documentToReactComponents(fields.answer)}</div>
+            <CollapsibleContentComponent
+              title="Answer"
+              content={fields.answer}
+            />
+          </article>
         </section>
       </main>
     </>

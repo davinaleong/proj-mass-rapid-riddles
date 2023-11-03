@@ -116,6 +116,31 @@
   }
 }
 
+.article {
+  --_article-clr: theme("colors.neutral.500");
+  --_article-heading-clr: theme("colors.red.500");
+  --_article-bg-clr: theme("colors.neutral.100");
+  --_article-border-clr: theme("colors.neutral.300");
+  --_article-border: 0.1em solid var(--_article-border-clr);
+  --_article-spacer: theme("padding.4");
+
+  color: var(--_article-clr);
+  background-color: var(--_article-bg-clr);
+  border: var(--_article-border);
+  padding-block-start: var(--_article-spacer);
+  padding-block-end: var(--_article-spacer);
+  padding-inline-start: var(--_article-spacer);
+  padding-inline-end: var(--_article-spacer);
+
+  &__heading {
+    color: var(--_article-heading-clr);
+  }
+
+  &__content {
+    color: var(--_article-clr);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .app {
     --_app-clr: theme("colors.neutral.50");
