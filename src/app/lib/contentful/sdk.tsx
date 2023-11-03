@@ -17,7 +17,7 @@ export const client: ContentfulClientApi<undefined> = createClient({
 })
 
 export async function getEntries(slug: string = ``) {
-  let object = {
+  let object: any = {
     content_type: CONTENTFUL_TYPE_ID,
     limit: Number(CONTENTFUL_LIMIT),
   }
