@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Montserrat } from "next/font/google"
 import LibConfig from "./lib/config"
+import { Providers } from "./components/providers"
 
 const font = Montserrat({ subsets: ["latin"] })
 
@@ -24,17 +25,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body id="top" className={`${font.className} app relative`}>
-        <Link href="#top" className="btn btn-top">
-          Top
-        </Link>
+    <html lang="en" suppressHydrationWarning>
+      <body id="top" className={`${font.className} relative`}>
+        <Providers>
+          <Link href="#top" className="btn btn-top">
+            Top
+          </Link>
 
-        <button type="button" className="btn btn-mode">
-          Dark
-        </button>
+          <button type="button" className="btn btn-mode">
+            Dark
+          </button>
 
-        {children}
+          {children}
+        </Providers>
       </body>
     </html>
   )
