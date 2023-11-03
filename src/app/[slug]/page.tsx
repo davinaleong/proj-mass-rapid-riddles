@@ -35,6 +35,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <section className="section flow">
           <h2 className="text-4xl font-bold">{`${fields.title}`}</h2>
 
+          <p>Click on the headings to reveal the hints and answers.</p>
+
           <article className="article flow">
             <CollapsibleContentComponent
               title="Question"

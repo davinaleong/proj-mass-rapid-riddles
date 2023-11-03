@@ -59,6 +59,23 @@
     z-index: 1;
   }
 
+  &-article {
+    --_btn-clr: theme("colors.red.500");
+    --_btn-bg-clr: transparent;
+    --_btn-border-clr: transparent;
+    --_btn-border: none;
+
+    --_btn-hover-clr: theme("colors.red.700");
+    --_btn-hover-bg-clr: transparent;
+    --_btn-hover-border-clr: transparent;
+    --_btn-hover-border: none;
+
+    --_btn-spacer-inline: 0;
+    --_btn-spacer-block: 0;
+
+    width: 100%;
+  }
+
   &-riddle {
     --_btn-clr: theme("colors.neutral.950");
     --_btn-bg-clr: theme("colors.neutral.50");
