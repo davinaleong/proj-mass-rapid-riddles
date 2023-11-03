@@ -26,18 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body id="top" className={`${font.className} relative`}>
-        <Providers>
-          <Link href="#top" className="btn btn-top">
-            Top
-          </Link>
+      <body id="top" className={`${font.className} app relative`}>
+        <Link href="#top" className="btn btn-top">
+          Top
+        </Link>
 
-          <button type="button" className="btn btn-mode">
-            Dark
-          </button>
-
-          {children}
-        </Providers>
+        {children}
       </body>
     </html>
   )
