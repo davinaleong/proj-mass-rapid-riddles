@@ -13,16 +13,21 @@ function CollapsibleContentComponent({
   const [thisToggle, setThisToggle] = useState(collapsed)
 
   const headingContent: JSX.Element | string = toggle ? (
-    <button className="btn btn-article" type="button">
-      {title}
+    <button
+      className="btn btn-article"
+      type="button"
+      onClick={() => setThisToggle(!thisToggle)}
+    >
+      <span className="font-bold">{title}</span>{" "}
+      <small>[click to toggle]</small>
     </button>
   ) : (
-    title
+    <span className="font-bold">{title}</span>
   )
 
   return (
-    <div className="article__collapsible">
-      <h3 className="article__collapsible__heading text-2xl font-bold">
+    <div className="article__collapsible" aria-hidden={thisToggle}>
+      <h3 className="article__collapsible__heading text-2xl">
         {headingContent}
       </h3>
 

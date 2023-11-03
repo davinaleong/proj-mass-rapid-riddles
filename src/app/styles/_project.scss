@@ -156,6 +156,14 @@
 
     &__content {
       color: var(--_article-clr);
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &[aria-hidden="true"] {
+      .article__collapsible__content {
+        opacity: 0;
+      }
     }
   }
 }

@@ -43,11 +43,18 @@ export default async function Page({ params }: { params: { slug: string } }) {
               content={fields.question}
             />
 
-            <CollapsibleContentComponent title="Hint" content={fields.hint} />
+            <CollapsibleContentComponent
+              title="Hint"
+              content={fields.hint}
+              toggle={true}
+              collapsed={true}
+            />
 
             <CollapsibleContentComponent
               title="Answer"
               content={fields.answer}
+              toggle={true}
+              collapsed={true}
             />
           </article>
         </section>
