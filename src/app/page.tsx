@@ -23,7 +23,6 @@ export default function Home() {
                 label={riddle.title}
                 href={`/${riddle.slug}`}
                 key={`r${index}`}
-                index={index}
               />
             ))}
           </div>
