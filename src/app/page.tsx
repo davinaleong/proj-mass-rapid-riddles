@@ -1,14 +1,10 @@
 import LibConfig from "./lib/config"
 import HeaderComponent from "./components/header"
-import { getEntries } from "./lib/contentful/sdk"
 import CardComponent from "./components/card"
+import { getAllRiddles } from "./db/riddles"
 
-async function getData() {
-  return getEntries()
-}
-
-export default async function Home() {
-  const riddles = await getData()
+export default function Home() {
+  const riddles = getAllRiddles()
 
   return (
     <>
@@ -22,11 +18,12 @@ export default async function Home() {
         <p className="italic">Click on the cards to see the riddle.</p>
         <section>
           <div className="btn-grid">
-            {riddles.map((riddle: any, index: number) => (
+            {riddles.map((riddle, index: number) => (
               <CardComponent
-                label={riddle.fields.title}
-                href={`/${riddle.fields.slug}`}
+                label={riddle.title}
+                href={`/${riddle.slug}`}
                 key={`r${index}`}
+                index={index}
               />
             ))}
           </div>

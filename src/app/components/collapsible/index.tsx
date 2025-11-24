@@ -1,6 +1,5 @@
 "use client"
 
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { useState } from "react"
 import { CollapsibleComponentInterface } from "./interfaces"
 
@@ -25,6 +24,9 @@ function CollapsibleContentComponent({
     <span className="font-bold">{title}</span>
   )
 
+  // Split content by newlines and render as paragraphs
+  const contentParagraphs = content.split('\n').filter(para => para.trim() !== '')
+
   return (
     <div className="article__collapsible" aria-hidden={thisToggle}>
       <h3 className="article__collapsible__heading text-2xl">
@@ -32,7 +34,9 @@ function CollapsibleContentComponent({
       </h3>
 
       <div className="article__collapsible__content flow">
-        {documentToReactComponents(content)}
+        {contentParagraphs.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 export interface CollapsibleComponentInterface {
   title: string
-  content: any
+  content: string
   toggle?: boolean
   collapsed?: boolean
 }
