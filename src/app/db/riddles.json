@@ -36,7 +36,7 @@
     "title": "Back",
     "slug": "back",
     "question": "Which 2 train stations are the opposite of \"back\"?",
-    "hint": "First station:\n\nSecond station:",
+    "hint": "First station: Line: Circle (Yellow) and North East (Purple). Location: South. \n\nSecond station: Circle (Yellow) and Downtown (Blue). Location: Southeast.",
     "answer": "HarbourFront and Bayfront."
   },
   {
@@ -84,7 +84,7 @@
     "title": "Colour",
     "slug": "colour",
     "question": "Which 3 stations have the name of a colour in the station's name?",
-    "hint": "First station:\n\nSecond station:\n\nThird station:",
+    "hint": "First station: Line: East West (Green). Location: Central, South West. \n\nSecond station: Line: North-South (Red). Location: North. \n\nThird station: Line: East-West (Green). Location: East.",
     "answer": "Redhill, Ang Mo Kio (Ang is red in Cantonese), and Tanah Merah (Merah is red in Malay)."
   },
   {
@@ -132,7 +132,7 @@
     "title": "Four Seasons",
     "slug": "four-seasons",
     "question": "Which 2 train stations are associated with the four seasons?",
-    "hint": "First station:\n\nSecond station:",
+    "hint": "First station: North-South (Red). Location: Central.\n\nSecond station: Line: Thomson-East Coast (Brown). Location: Central, Northwest.",
     "answer": "Summerset (Somerset) and Springleaf."
   },
   {
@@ -180,8 +180,8 @@
     "title": "Lumber",
     "slug": "lumber",
     "question": "Which 4 stations produce lumber?",
-    "hint": "First station:\n\nSecond station:\n\nThird station:\n\nFourth station:",
-    "answer": "Woodlands, Woodleigh, Woodlands North, Woodlands South."
+    "hint": "First station: Line: North-South Line. Location: North. \n\nSecond station: Line: Thomson-East Coast Line. Location: North.\n\nThird station: Line: Thomson-East Coast Line. Location: North.\n\nFourth station: Line: North Eash (Purple). Location: Central, Northeast",
+    "answer": "Woodlands, Woodlands North, Woodlands South, Woodleigh."
   },
   {
     "id": "4xXvHYHgeQVoJ8M03H456X",
@@ -220,7 +220,7 @@
     "title": "Payment",
     "slug": "payment",
     "question": "Which 2 stations are associated with payment?",
-    "hint": "First station:\n\nSecond station:",
+    "hint": "First station: Line: North-South (Red). Location: Central.\n\nSecond station: East-West (Green) and Circle (Yellow). Location: East.",
     "answer": "Toh Payoh (Toh Pay-oh) and Paya Lebar (Pay-a Lebar)."
   },
   {
@@ -268,7 +268,7 @@
     "title": "Sleep",
     "slug": "sleep",
     "question": "Which 5 train stations are associated with sleep?",
-    "hint": "First station:\n\nSecond station:\n\nThird station:\n\nFourth station:\n\nFifth station:",
+    "hint": "First station: Line: East-West (Green). Location: West.\n\nSecond station: East-West (Green) and Circle (Yellow). Location: East.\n\nThird station: East-West (Green). Location: East.\n\nFourth station: Line: Downtown (Blue). Location: East.\n\nFifth station: Line: Downtown (Blue). Location: East.",
     "answer": "Boon Lay, Paya Lebar (Paya Ley-bar), Bedok, Bedok Reservoir, and Bedok North."
   },
   {
@@ -300,7 +300,7 @@
     "title": "Wealth",
     "slug": "wealth",
     "question": "Which train station in Singapore shares its wealth?",
-    "hint": "Line: Green (East-West Line).\nGeneral location: Central, west.",
+    "hint": "Line: Green (East-West Line).\nLocation: Central, West.",
     "answer": "Commonwealth."
   }
 ]
